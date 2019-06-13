@@ -2,8 +2,7 @@
   "version": 2,
   "name": "my-express-project",
   "builds": [
-    { "src": "www/**/*", "use": "@now/static" },
-    { "src": "api/**/*.js", "use": "@now/node" }
+    { "src": "routes/**/*.js", "use": "@now/node@canary" }
   ],
-  "routes": [{ "src": "/", "dest": "www/index.html" }]
+  "routes": [{ "src": "/", "dest": "routes/root/" }]
 }
