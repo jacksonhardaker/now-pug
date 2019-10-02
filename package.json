@@ -1,11 +1,11 @@
 {
   "scripts": {
-    "start": "now dev -p 3001",
-    "now-build": "echo 'build'"
+    "start": "now dev -p 3001"
   },
   "dependencies": {
     "express": "^4.16.4",
     "helmet": "^3.18.0",
+    "jest": "^24.9.0",
     "moment": "^2.24.0",
     "pug": "^2.0.3"
   }
