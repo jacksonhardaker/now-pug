@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "now dev -p 3001",
-    "now-build": "cp -r ./views/ ./dist/views/"
+    "now-build": "echo 'build'"
   },
   "dependencies": {
     "express": "^4.16.4",
