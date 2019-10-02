@@ -2,7 +2,11 @@
   "version": 2,
   "name": "now-pug",
   "builds": [
-    { "src": "routes/**/*.js", "use": "@now/node@canary" }
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    },
+    { "src": "routes/**/*.js", "use": "@now/node" }
   ],
-  "routes": [{ "src": "/", "dest": "routes/root/" }]
+  "routes": [{ "src": "/", "dest": "routes/root.js" }]
 }

@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "now dev -p 3001",
+    "now-build": "cp -r ./views/ ./dist/views/"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "helmet": "^3.18.0",
