@@ -2,7 +2,27 @@
   "version": 2,
   "name": "now-pug",
   "builds": [
-    { "src": "routes/**/*.js", "use": "@now/node" }
+    {
+      "src": "routes/**/*.js",
+      "use": "@now/node"
+    }
   ],
-  "routes": [{ "src": "/", "dest": "routes/root.js" }]
+  "routes": [
+    {
+      "src": "^.*[^\\/](\\?.*){0}",
+      "dest": "routes/force.js"
+    },
+    {
+      "src": "^.*[A-Z]+.*$",
+      "dest": "routes/lowercase.js"
+    },
+    {
+      "src": "/",
+      "dest": "routes/root.js"
+    },
+    {
+      "src": "/.*",
+      "dest": "routes/all.js"
+    }
+  ]
 }
