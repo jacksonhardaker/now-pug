@@ -9,16 +9,20 @@
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "routes/root.js"
+    },
+    {
+      "src": "/express",
+      "dest": "routes/express.js"
+    },
+    {
       "src": "^.*[^\\/](\\?.*){0}",
       "dest": "routes/force.js"
     },
     {
       "src": "^.*[A-Z]+.*$",
       "dest": "routes/lowercase.js"
-    },
-    {
-      "src": "/",
-      "dest": "routes/root.js"
     },
     {
       "src": "/.*",
